@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('/users', 'UserController@index');
 
 Route::get('/intern', 'UnitController@index');
+
+Route::get('/mondoride', 'MondoController@index');
+
+Route::post('/mondoride/pay', 'MondoController@post')->name('post_pay');
